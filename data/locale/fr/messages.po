@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-23 16:54+0100\n"
+"PO-Revision-Date: 2018-03-23 16:59+0100\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.0.5\n"
+
+msgid "No result !"
+msgstr "Aucun résultat !"
+
+msgid "Error while geocoding !"
+msgstr "Erreur lors du géocodage !"
+
+msgid "Loading..."
+msgstr "Chargement en cours..."
+
+msgid "External services"
+msgstr "Services externes"
+
+msgid "Local services"
+msgstr "Service locaux"
+
+msgid "Source"
+msgstr "Source"
+
+msgid "World"
+msgstr "Monde"
+
+msgid "Belgium"
+msgstr "Belgique"
+
+msgid "Street"
+msgstr "Rue"
+
+msgid "House number"
+msgstr "Numéro"
+
+msgid "Zone"
+msgstr "Zone"
+
+msgid "Search"
+msgstr "Chercher"
+
+msgid "Address"
+msgstr "Adresse"
+
+msgid "Click in the map to reverse geocode."
+msgstr "Cliquez dans la carte pour effectuer un géocodage inversé."
+
+msgid "Oops!"
+msgstr "Oups!"
+
+msgid "This is awkward."
+msgstr "C'est gênant."
+
+msgid "We encountered a \"404 Not Found\" error"
+msgstr "Nous avons rencontré une erreur \"404 Not Found\""
+
+#, php-format
+msgid ""
+"You are looking for something that doesn't exist or may have moved. Check "
+"out one of the links on this page or head back to <a href=\"%s\">Home</a>."
+msgstr ""
+"Vous cherchez quelque chose qui n'existe pas ou qui a été déplacé. "
+"Vérifiez les liens de le page ou retournez à l'<a href=\"%s\">Accueil</a>."
+
+#, php-format
+msgid "We encountered a \"%d %s\" error."
+msgstr "Nous avons rencontré une erreur \"%d %s\"."
+
+msgid "Results"
+msgstr "Résultats"

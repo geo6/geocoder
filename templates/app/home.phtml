@@ -1,0 +1,56 @@
+<?php $this->layout('layout::default', ['title' => 'Geocoder']) ?>
+
+<div class="container">
+    <form id="geocoder-form" action="/" method="post" autocomplete="off">
+        <div class="form-group">
+            <label for="selectSource"><?=$this->e($this->translate('Source'))?> </label>
+            <select required="required" class="form-control" id="selectSource" name="source">
+                <optgroup label="&#x1F30D; <?=$this->e($this->translate('World'))?>">
+                    <option value="nominatim">OpenStreeMap (Nominatim)</option>
+                </optgroup>
+                <optgroup label="&#x1F1E7;&#x1F1EA; <?=$this->e($this->translate('Belgium'))?>">
+                    <option value="geo6" selected="selected" data-mult i="1">GEO-6</option>
+                    <option value="bpost">bpost</option>
+                    <option value="geopunt">Geopunt</option>
+                    <option value="spw">Service Public de Wallonie</option>
+                    <option value="urbis">UrbIS</option>
+                </optgroup>
+            </select>
+        </div>
+        <div id="geocoder-form-address-multi" class="row mt-3 d-none">
+            <div class="col-sm form-group">
+                <label for="inputStreet"><?=$this->e($this->translate('Street'))?></label>
+                <input type="text" class="form-control" id="inputStreet" name="street">
+            </div>
+            <div class="col-sm form-group">
+                <label for="inputHouseNumber"><?=$this->e($this->translate('House number'))?></label>
+                <input type="text" class="form-control" id="inputHouseNumber" name="hnr">
+            </div>
+            <div class="col-sm form-group">
+                <label for="inputZone"><?=$this->e($this->translate('Zone'))?></label>
+                <input type="text" class="form-control" id="inputZone" name="zone">
+            </div>
+            <div class="col-sm-2 form-group align-self-end">
+                <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-search"></i> <?=$this->e($this->translate('Search'))?></button>
+            </div>
+        </div>
+        <div id="geocoder-form-address-single" class="row mt-3">
+            <div class="col-sm form-group">
+                <label for="inputAddress"><?=$this->e($this->translate('Address'))?></label>
+                <input type="text" required="required" class="form-control" id="inputAddress" name="address">
+            </div>
+            <div class="col-sm-2 form-group align-self-end">
+                <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-search"></i> <?=$this->e($this->translate('Search'))?></button>
+            </div>
+        </div>
+    </form>
+    <hr>
+    <div id="map">
+        <div id="geocoder-location" class="overlay d-none"></div>
+    </div>
+    <small id="geocoder-reverse-helpblock" class="form-text text-secondary">
+        <?=$this->e($this->translate('Click in the map to reverse geocode.'))?>
+    </small>
+</div>
+
+<?=$this->fetch('partial::modal', $this->data())?>

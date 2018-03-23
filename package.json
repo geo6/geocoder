@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome": "1.1.4",
+    "@fortawesome/fontawesome-free-solid": "5.0.8",
+    "@fortawesome/fontawesome-pro-light": "5.0.8",
+    "ol": "4.6.5"
+  },
+  "devDependencies": {
+    "css-loader": "0.28.11",
+    "eslint": "4.19.1",
+    "node-sass": "4.8.3",
+    "sass-loader": "6.0.7",
+    "style-loader": "0.20.3",
+    "webpack": "4.2.0",
+    "webpack-cli": "2.0.13"
+  },
+  "scripts": {
+    "build": "npm run build:css & npm run build:js",
+    "build:css": "node-sass --output-style compressed --output public/css resources/sass/style.scss",
+    "build:js": "webpack --config webpack.config.js",
+    "test": "eslint resources/javascript/",
+    "fix": "eslint resources/javascript/ --fix",
+    "watch": "npm run watch:css",
+    "watch:css": "node-sass --watch --output-style compressed --output public/css resources/sass/style.scss"
+  }
+}

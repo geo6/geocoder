@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-23 16:54+0100\n"
+"PO-Revision-Date: 2018-03-23 17:02+0100\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.0.5\n"
+
+msgid "External services"
+msgstr ""
+
+msgid "Local services"
+msgstr ""
+
+msgid "Source"
+msgstr "Bron"
+
+msgid "World"
+msgstr "Wereld"
+
+msgid "Belgium"
+msgstr "België"
+
+msgid "Street"
+msgstr "Straat"
+
+msgid "House number"
+msgstr "Huisnummer"
+
+msgid "Zone"
+msgstr "Zone"
+
+msgid "Search"
+msgstr "Zoek"
+
+msgid "Address"
+msgstr "Adres"
+
+msgid "Click in the map to reverse geocode."
+msgstr ""
+
+msgid "Oops!"
+msgstr ""
+
+msgid "This is awkward."
+msgstr ""
+
+msgid "We encountered a \"404 Not Found\" error"
+msgstr ""
+
+#, php-format
+msgid ""
+"You are looking for something that doesn't exist or may have moved. Check "
+"out one of the links on this page or head back to <a href=\"%s\">Home</a>."
+msgstr ""
+
+#, php-format
+msgid "We encountered a \"%d %s\" error."
+msgstr ""
+
+msgid "Results"
+msgstr ""

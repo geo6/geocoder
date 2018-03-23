@@ -1,0 +1,48 @@
+@import 'global';
+
+#map {
+    background-color: #eee;
+    min-height: 50vh;
+    position: relative;
+}
+
+#geocoder-results > li:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.overlay {
+    background-color: rgba(255,255,255,.8);
+    border-radius: 4px;
+    color: #000;
+    font-family: 'Lucida Grande',Verdana,Geneva,Lucida,Arial,Helvetica,sans-serif;
+    font-size: .7rem;
+    line-height: 1.375em;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    max-width: 33%;
+    min-width: 20%;
+    z-index: 999;
+
+    &.overlay-error {
+        background-color: rgba(248,215,218,.8);
+        color: rgb(114,28,36);
+    }
+
+    &.overlay-warning {
+        background: rgba(255,243,205,.8);
+        color: rgb(133,100,4);
+    }
+}
+
+.ol-attribution.ol-logo-only,
+.ol-attribution.ol-uncollapsible {
+    height: 1.5em !important;
+    max-width: calc(100% - 3em) !important;
+}
+.ol-control button, .ol-attribution, .ol-scale-line-inner {
+    font-family: 'Lucida Grande',Verdana,Geneva,Lucida,Arial,Helvetica,sans-serif !important;
+}
