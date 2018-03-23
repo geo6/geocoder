@@ -4,17 +4,14 @@ declare(strict_types=1);
 
 namespace App\Handler;
 
-use App\Middleware\ConfigMiddleware;
-use Geocoder\Query\ReverseQuery;
 use Geocoder\Exception\InvalidServerResponse;
 use Geocoder\Exception\UnsupportedOperation;
+use Geocoder\Query\ReverseQuery;
 use Locale;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 use Zend\Diactoros\Response\JsonResponse;
-use Zend\Expressive\Router\RouterInterface;
-use Zend\Expressive\Template\TemplateRendererInterface;
 
 class ReverseHandler implements RequestHandlerInterface
 {
@@ -59,8 +56,8 @@ class ReverseHandler implements RequestHandlerInterface
         }
 
         $json = [
-          'type' => 'FeatureCollection',
-          'features' => []
+          'type'     => 'FeatureCollection',
+          'features' => [],
         ];
 
         if (count($result) === 0) {

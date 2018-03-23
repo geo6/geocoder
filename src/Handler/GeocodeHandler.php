@@ -4,17 +4,13 @@ declare(strict_types=1);
 
 namespace App\Handler;
 
-use App\Middleware\ConfigMiddleware;
-use App\Middleware\DbAdapterMiddleware;
-use Geocoder\Query\GeocodeQuery;
 use Geocoder\Exception\InvalidServerResponse;
+use Geocoder\Query\GeocodeQuery;
 use Locale;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 use Zend\Diactoros\Response\JsonResponse;
-use Zend\Expressive\Router\RouterInterface;
-use Zend\Expressive\Template\TemplateRendererInterface;
 
 class GeocodeHandler implements RequestHandlerInterface
 {
@@ -65,10 +61,9 @@ class GeocodeHandler implements RequestHandlerInterface
             return new JsonResponse(['error' => $e->getMessage()], 500);
         }
 
-
         $json = [
-          'type' => 'FeatureCollection',
-          'features' => []
+          'type'     => 'FeatureCollection',
+          'features' => [],
         ];
 
         if (count($result) === 0) {
