@@ -8,6 +8,7 @@ package-lock.json
 
 # Local configs
 config/autoload/*.local.php
+config/development.config.php
 
 # Binary gettext files
 *.mo
