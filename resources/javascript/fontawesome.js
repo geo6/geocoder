@@ -1,9 +1,10 @@
-import fontawesome from '@fortawesome/fontawesome';
+import { library, dom } from '@fortawesome/fontawesome-svg-core'
+import { faSearch } from '@fortawesome/free-solid-svg-icons/faSearch'
+import { faLanguage } from '@fortawesome/pro-light-svg-icons'
 
-import faSearch from '@fortawesome/fontawesome-free-solid/faSearch';
-import faLanguage from '@fortawesome/fontawesome-pro-light/faLanguage';
-
-fontawesome.library.add(
-    faLanguage,
-    faSearch
+library.add(
+  faLanguage,
+  faSearch
 );
+
+dom.watch();
