@@ -14,10 +14,11 @@ $(document).ready(function () {
         window.app.fn.clearResult();
         window.app.fn.clearLocation();
 
-        $('#inputStreet, #inputAddress').prop('required', false);
+        $('#inputStreet, #inputZone, #inputAddress').prop('required', false);
 
         if (multi === 1) {
             $('#inputStreet').prop('required', true);
+            $('#inputZone').prop('required', true);
             if ($('#geocoder-form-address-multi').hasClass('d-none')) {
                 $('#geocoder-form-address-multi').removeClass('d-none');
                 $('#geocoder-form-address-single').addClass('d-none');

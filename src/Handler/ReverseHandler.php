@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Handler;
 
+use App\Middleware\ConfigMiddleware;
 use Geocoder\Exception\InvalidServerResponse;
 use Geocoder\Exception\UnsupportedOperation;
 use Geocoder\Query\ReverseQuery;
@@ -17,6 +18,8 @@ class ReverseHandler implements RequestHandlerInterface
 {
     public function handle(ServerRequestInterface $request) : ResponseInterface
     {
+        $config = $request->getAttribute(ConfigMiddleware::CONFIG_ATTRIBUTE);
+
         $params = $request->getParsedBody();
 
         $httpClient = new \Http\Adapter\Guzzle6\Client();
@@ -25,7 +28,7 @@ class ReverseHandler implements RequestHandlerInterface
                 $provider = new \Geocoder\Provider\bpost\bpost($httpClient);
                 break;
             case 'geo6':
-                $provider = new \Geocoder\Provider\Addok\Addok($httpClient, 'http://addok.geocode.be/');
+                $provider = new \Geocoder\Provider\Geo6\Geo6($httpClient, $config['access']['geo6']['consumer'], $config['access']['geo6']['secret']);
                 break;
             case 'geopunt':
                 $provider = new \Geocoder\Provider\Geopunt\Geopunt($httpClient);
