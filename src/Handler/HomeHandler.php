@@ -30,7 +30,7 @@ class HomeHandler implements RequestHandlerInterface
         $locale = $request->getAttribute(LocalizationMiddleware::LOCALIZATION_ATTRIBUTE);
 
         return new HtmlResponse($this->template->render('app::home', [
-            'locale' => $locale
+            'locale' => $locale,
         ]));
     }
 }
