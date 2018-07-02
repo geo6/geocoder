@@ -1,10 +1,12 @@
-import { library, dom } from '@fortawesome/fontawesome-svg-core'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
-import { faLanguage } from '@fortawesome/pro-light-svg-icons'
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
+import {
+    faLanguage,
+    faSearch
+} from '@fortawesome/free-solid-svg-icons';
 
 library.add(
-  faLanguage,
-  faSearch
+    faLanguage,
+    faSearch
 );
 
 dom.watch();

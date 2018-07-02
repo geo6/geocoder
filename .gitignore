@@ -4,7 +4,6 @@ vendor/
 
 # NPM files
 node_modules/
-package-lock.json
 
 # Local configs
 config/autoload/*.local.php
