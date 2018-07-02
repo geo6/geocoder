@@ -73,7 +73,7 @@ window.app.map = new Map({
         new TileLayer({
             source: new OSMSource({
                 attributions: [OSMSourceAttribution, 'Tiles courtesy of <a href="https://geo6.be/" target="_blank">GEO-6</a>'],
-                url: 'https://tile.geo6.be/osmbe/{z}/{x}/{y}.png',
+                url: 'https://tile.geo6.be/osmbe' + (window.app.locale === 'fr' || window.app.locale === 'nl' ? '-' + window.app.locale : '') + '/{z}/{x}/{y}.png',
                 maxZoom: 18
             })
         }),

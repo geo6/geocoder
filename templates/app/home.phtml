@@ -1,5 +1,11 @@
 <?php $this->layout('layout::default', ['title' => 'Geocoder']) ?>
 
+<?php $this->start('scripts') ?>
+<script>
+window.app.locale = <?=json_encode($locale)?>;
+</script>
+<?php $this->stop() ?>
+
 <div class="container">
     <form id="geocoder-form" action="/" method="post" autocomplete="off">
         <div class="form-group">
