@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3c690304c64f6578c94d59c7152d4429",
+    "content-hash": "4bf57fe2a23900f7a07a4b61024d25e7",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -244,16 +244,16 @@
         },
         {
             "name": "geo6/geocoder-php-geo6-provider",
-            "version": "v1.1.1",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/geo6/geocoder-php-geo6-provider.git",
-                "reference": "9f88ce0bd19ceefe16d520208bdebc6449cfca38"
+                "reference": "05c0d6e55eff9a59c037981c57bddb318d29dc4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/geo6/geocoder-php-geo6-provider/zipball/9f88ce0bd19ceefe16d520208bdebc6449cfca38",
-                "reference": "9f88ce0bd19ceefe16d520208bdebc6449cfca38",
+                "url": "https://api.github.com/repos/geo6/geocoder-php-geo6-provider/zipball/05c0d6e55eff9a59c037981c57bddb318d29dc4a",
+                "reference": "05c0d6e55eff9a59c037981c57bddb318d29dc4a",
                 "shasum": ""
             },
             "require": {
@@ -291,7 +291,7 @@
                 }
             ],
             "description": "Geocoder Geo-6 adapter",
-            "time": "2018-05-16T14:32:30+00:00"
+            "time": "2018-06-08T14:51:17+00:00"
         },
         {
             "name": "geo6/geocoder-php-geopunt-provider",
@@ -449,22 +449,22 @@
         },
         {
             "name": "geocoder-php/common-http",
-            "version": "4.0.0",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/geocoder-php/php-common-http.git",
-                "reference": "a469c06658e4aadf034f793cf6e398d44482491e"
+                "reference": "99db54307a4b12e4cb4a8c3fbafc41c395c97d65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/geocoder-php/php-common-http/zipball/a469c06658e4aadf034f793cf6e398d44482491e",
-                "reference": "a469c06658e4aadf034f793cf6e398d44482491e",
+                "url": "https://api.github.com/repos/geocoder-php/php-common-http/zipball/99db54307a4b12e4cb4a8c3fbafc41c395c97d65",
+                "reference": "99db54307a4b12e4cb4a8c3fbafc41c395c97d65",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.0",
                 "php-http/client-implementation": "^1.0",
-                "php-http/discovery": "^1.0",
+                "php-http/discovery": "^1.4",
                 "php-http/httplug": "^1.0",
                 "php-http/message-factory": "^1.0.2",
                 "psr/http-message": "^1.0",
@@ -475,7 +475,7 @@
                 "nyholm/psr7": "^0.2.2",
                 "php-http/message": "^1.0",
                 "php-http/mock-client": "^1.0",
-                "phpunit/phpunit": "^6.1",
+                "phpunit/phpunit": "6.3.*",
                 "symfony/stopwatch": "~2.5"
             },
             "type": "library",
@@ -507,7 +507,7 @@
             "keywords": [
                 "http geocoder"
             ],
-            "time": "2017-08-01T06:58:52+00:00"
+            "time": "2018-06-28T09:46:39+00:00"
         },
         {
             "name": "geocoder-php/nominatim-provider",
