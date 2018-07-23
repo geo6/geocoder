@@ -40,7 +40,7 @@ class GeocodeHandler implements RequestHandlerInterface
                 break;
             case 'nominatim':
             default:
-                $provider = \Geocoder\Provider\Nominatim\Nominatim::withOpenStreetMapServer($httpClient);
+                $provider = \Geocoder\Provider\Nominatim\Nominatim::withOpenStreetMapServer($httpClient, $_SERVER['HTTP_USER_AGENT'], $_SERVER['HTTP_REFERER']);
                 break;
         }
         $geocoder = new \Geocoder\StatefulGeocoder($provider, Locale::getDefault());
