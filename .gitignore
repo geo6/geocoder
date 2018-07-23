@@ -23,5 +23,6 @@ temp/
 config/application/
 public/css/
 public/js/
+.vscode/
 .ftpconfig
 .npmrc
