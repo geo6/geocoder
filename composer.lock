@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c6e9d9ecc771b0a0323aee5ef2eeb40",
+    "content-hash": "20652535cfdeb0016f3538d3264c4387",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -1799,16 +1799,16 @@
         },
         {
             "name": "zendframework/zend-expressive",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-expressive.git",
-                "reference": "4ea54ed15906c0e06d5211daf88a00ed36a0df83"
+                "reference": "c6db5b1a7524414eee0637bb50b8eed32fd67794"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-expressive/zipball/4ea54ed15906c0e06d5211daf88a00ed36a0df83",
-                "reference": "4ea54ed15906c0e06d5211daf88a00ed36a0df83",
+                "url": "https://api.github.com/repos/zendframework/zend-expressive/zipball/c6db5b1a7524414eee0637bb50b8eed32fd67794",
+                "reference": "c6db5b1a7524414eee0637bb50b8eed32fd67794",
                 "shasum": ""
             },
             "require": {
@@ -1887,7 +1887,7 @@
                 "zend-expressive",
                 "zf"
             ],
-            "time": "2018-04-10T16:22:30+00:00"
+            "time": "2018-07-25T15:30:00+00:00"
         },
         {
             "name": "zendframework/zend-expressive-fastroute",
@@ -2555,16 +2555,16 @@
         },
         {
             "name": "zendframework/zend-stratigility",
-            "version": "3.0.1",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-stratigility.git",
-                "reference": "1efae7142c64a795034fd0dbf8013aa8f531edf3"
+                "reference": "75b64558201807514734a9f46386816f2900d7f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-stratigility/zipball/1efae7142c64a795034fd0dbf8013aa8f531edf3",
-                "reference": "1efae7142c64a795034fd0dbf8013aa8f531edf3",
+                "url": "https://api.github.com/repos/zendframework/zend-stratigility/zipball/75b64558201807514734a9f46386816f2900d7f7",
+                "reference": "75b64558201807514734a9f46386816f2900d7f7",
                 "shasum": ""
             },
             "require": {
@@ -2617,7 +2617,7 @@
                 "psr-7",
                 "zf"
             ],
-            "time": "2018-04-04T17:47:35+00:00"
+            "time": "2018-07-24T20:39:18+00:00"
         }
     ],
     "packages-dev": [
