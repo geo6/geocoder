@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea99583a4fc214b3643d7c2eda2c0e46",
+    "content-hash": "6b8b42dea34dadfd2e240f0c497f3be9",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -398,16 +398,16 @@
         },
         {
             "name": "geo6/geocoder-php-urbis-provider",
-            "version": "v1.0.2",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/geo6/geocoder-php-urbis-provider.git",
-                "reference": "ae06baa8dc3c66aeef02686208c2d7048e534bfe"
+                "reference": "93341c8fbb9f6d300867fe18392ef16f50aa1e7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/geo6/geocoder-php-urbis-provider/zipball/ae06baa8dc3c66aeef02686208c2d7048e534bfe",
-                "reference": "ae06baa8dc3c66aeef02686208c2d7048e534bfe",
+                "url": "https://api.github.com/repos/geo6/geocoder-php-urbis-provider/zipball/93341c8fbb9f6d300867fe18392ef16f50aa1e7d",
+                "reference": "93341c8fbb9f6d300867fe18392ef16f50aa1e7d",
                 "shasum": ""
             },
             "require": {
@@ -423,7 +423,7 @@
                 "nyholm/psr7": "^0.2.2",
                 "php-http/curl-client": "^1.7",
                 "php-http/message": "^1.0",
-                "phpunit/phpunit": "6.3.*"
+                "phpunit/phpunit": "6.3.* || 6.5.*"
             },
             "type": "library",
             "autoload": {
@@ -445,7 +445,7 @@
                 }
             ],
             "description": "Geocoder UrbIS adapter",
-            "time": "2018-01-19T13:40:35+00:00"
+            "time": "2018-10-26T14:14:32+00:00"
         },
         {
             "name": "geocoder-php/common-http",
