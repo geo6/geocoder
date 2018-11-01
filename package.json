@@ -7,7 +7,7 @@
   "devDependencies": {
     "css-loader": "1.0.0",
     "eslint": "5.5.0",
-    "node-sass": "4.9.3",
+    "node-sass": "4.9.4",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.0",
     "webpack": "4.17.2",
